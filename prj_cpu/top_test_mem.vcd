@@ -1,0 +1,107 @@
+$date
+	Sun Jun 29 12:16:54 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module top_test_mem $end
+$var wire 1 ! mem_done $end
+$var wire 32 " mem_data_rd [31:0] $end
+$var reg 1 # mem_ctr $end
+$var reg 32 $ mem_data_addr [31:0] $end
+$var reg 32 % mem_data_sv [31:0] $end
+$var reg 1 & mem_io $end
+$var reg 1 ' sys_clk $end
+$var reg 32 ( sys_count [31:0] $end
+$var reg 1 ) sys_rst $end
+$scope module u_mem $end
+$var wire 1 ' sys_clk $end
+$var wire 1 # sys_ctr $end
+$var wire 32 * sys_data_addr [31:0] $end
+$var wire 32 + sys_data_sv [31:0] $end
+$var wire 1 & sys_io $end
+$var wire 1 ) sys_rst $end
+$var parameter 2 , MOD_STATE_DONE $end
+$var parameter 2 - MOD_STATE_WORK $end
+$var reg 2 . mod_state [1:0] $end
+$var reg 32 / sys_data_rd [31:0] $end
+$var reg 1 ! sys_done $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 -
+b10 ,
+$end
+#0
+$dumpvars
+bx /
+bx .
+bx +
+bx *
+1)
+bx (
+x'
+x&
+bx %
+bx $
+x#
+bx "
+x!
+$end
+#1000
+1!
+b0 "
+b0 /
+b10 .
+0)
+#2000
+b0 (
+0'
+1)
+#10000
+1'
+#20000
+0'
+#30000
+1'
+#32000
+b1010 (
+#33000
+0!
+b1 .
+b1011 (
+1#
+0&
+b1010 $
+b1010 *
+b10001 %
+b10001 +
+#40000
+0'
+#50000
+b1100 (
+1#
+1&
+0!
+b1 .
+1'
+#60000
+0'
+#70000
+b10110 (
+1!
+b10 .
+b10001 "
+b10001 /
+1'
+#80000
+0'
+#90000
+1'
+#100000
+0'

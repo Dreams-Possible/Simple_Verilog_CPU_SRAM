@@ -1,0 +1,316 @@
+$date
+	Sun Jun 29 12:16:47 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module top_test_cpu $end
+$var wire 32 ! cpu_io_data_rd [31:0] $end
+$var wire 1 " cpu_io_done $end
+$var wire 1 # mem_ctr $end
+$var wire 32 $ mem_data_addr [31:0] $end
+$var wire 32 % mem_data_sv [31:0] $end
+$var wire 1 & mem_io $end
+$var wire 1 ' mem_done $end
+$var wire 32 ( mem_data_rd [31:0] $end
+$var wire 1 ) cpu_io_io $end
+$var wire 32 * cpu_io_data_sv [31:0] $end
+$var wire 32 + cpu_io_data_addr [31:0] $end
+$var wire 1 , cpu_io_ctr $end
+$var wire 1 - cpu_inst_st $end
+$var wire 32 . cpu_cpu_reg3 [31:0] $end
+$var wire 32 / cpu_cpu_reg2 [31:0] $end
+$var wire 32 0 cpu_cpu_reg1 [31:0] $end
+$var wire 32 1 cpu_cpu_reg0 [31:0] $end
+$var reg 32 2 cpu_inst_cmd [31:0] $end
+$var reg 1 3 cpu_inst_up $end
+$var reg 1 4 sys_clk $end
+$var reg 32 5 sys_count [31:0] $end
+$var reg 1 6 sys_rst $end
+$scope module u_cpu $end
+$var wire 1 4 sys_clk $end
+$var wire 32 7 sys_cpu_reg0 [31:0] $end
+$var wire 32 8 sys_cpu_reg1 [31:0] $end
+$var wire 32 9 sys_cpu_reg2 [31:0] $end
+$var wire 32 : sys_cpu_reg3 [31:0] $end
+$var wire 32 ; sys_inst_cmd [31:0] $end
+$var wire 1 3 sys_inst_up $end
+$var wire 32 < sys_io_data_rd [31:0] $end
+$var wire 1 " sys_io_done $end
+$var wire 1 6 sys_rst $end
+$var wire 5 = mod_opreg_3 [4:0] $end
+$var wire 5 > mod_opreg_2 [4:0] $end
+$var wire 5 ? mod_opreg_1 [4:0] $end
+$var wire 5 @ mod_opreg_0 [4:0] $end
+$var wire 2 A mod_opext_0 [1:0] $end
+$var wire 6 B mod_opcd_1 [5:0] $end
+$var wire 4 C mod_opcd_0 [3:0] $end
+$var parameter 32 D MOD_INST_BAS $end
+$var parameter 32 E MOD_INST_BAS_AND $end
+$var parameter 32 F MOD_INST_BAS_CP $end
+$var parameter 32 G MOD_INST_BAS_LD $end
+$var parameter 32 H MOD_INST_BAS_MVL $end
+$var parameter 32 I MOD_INST_BAS_MVR $end
+$var parameter 32 J MOD_INST_BAS_NOT $end
+$var parameter 32 K MOD_INST_BAS_OR $end
+$var parameter 32 L MOD_INST_BAS_XOR $end
+$var parameter 32 M MOD_INST_IO $end
+$var parameter 32 N MOD_INST_IO_READ $end
+$var parameter 32 O MOD_INST_IO_SAVE $end
+$var parameter 32 P MOD_INST_MC $end
+$var parameter 32 Q MOD_INST_MC_ADD $end
+$var parameter 32 R MOD_INST_MC_BGT $end
+$var parameter 32 S MOD_INST_MC_EQ $end
+$var parameter 32 T MOD_INST_MC_LST $end
+$var parameter 32 U MOD_INST_MC_SUB $end
+$var parameter 32 V MOD_STATE_DONE $end
+$var parameter 32 W MOD_STATE_ERROR $end
+$var parameter 32 X MOD_STATE_WAIT_1 $end
+$var parameter 32 Y MOD_STATE_WORK $end
+$var reg 4 Z mod_state [3:0] $end
+$var reg 1 - sys_inst_st $end
+$var reg 1 , sys_io_ctr $end
+$var reg 32 [ sys_io_data_addr [31:0] $end
+$var reg 32 \ sys_io_data_sv [31:0] $end
+$var reg 1 ) sys_io_io $end
+$upscope $end
+$scope module u_mem $end
+$var wire 1 4 sys_clk $end
+$var wire 1 # sys_ctr $end
+$var wire 32 ] sys_data_addr [31:0] $end
+$var wire 32 ^ sys_data_sv [31:0] $end
+$var wire 1 & sys_io $end
+$var wire 1 6 sys_rst $end
+$var parameter 2 _ MOD_STATE_DONE $end
+$var parameter 2 ` MOD_STATE_WORK $end
+$var reg 2 a mod_state [1:0] $end
+$var reg 32 b sys_data_rd [31:0] $end
+$var reg 1 ' sys_done $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 `
+b10 _
+b1 Y
+b10 X
+b11 W
+b100 V
+b10 U
+b101 T
+b100 S
+b11 R
+b1 Q
+b11 P
+b10 O
+b1 N
+b10 M
+b100 L
+b10 K
+b11 J
+b111 I
+b110 H
+b1000 G
+b101 F
+b1 E
+b1 D
+$end
+#0
+$dumpvars
+bx b
+bx a
+bx ^
+bx ]
+bx \
+bx [
+bx Z
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+16
+bx 5
+x4
+x3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+x-
+x,
+bx +
+bx *
+x)
+bx (
+x'
+x&
+bx %
+bx $
+x#
+x"
+bx !
+$end
+#1000
+1-
+b0 %
+b0 ^
+b0 *
+b0 \
+b0 $
+b0 ]
+b0 +
+b0 [
+0&
+0)
+0#
+0,
+b100 Z
+b0 .
+b0 :
+b0 /
+b0 9
+b0 0
+b0 8
+b0 1
+b0 7
+1"
+1'
+b0 !
+b0 <
+b0 (
+b0 b
+b10 a
+06
+#2000
+b0 5
+04
+16
+#10000
+14
+#12000
+b1010 5
+#13000
+0-
+b1 Z
+b1 C
+b1000 B
+b0 @
+b0 ?
+b0 >
+b100 =
+b1 A
+b1011 5
+13
+b10010000000000000000000010001 2
+b10010000000000000000000010001 ;
+#20000
+04
+#30000
+b10 C
+b10 B
+b0 =
+b0 A
+b1100 5
+13
+b100000100000000000000000000000 2
+b100000100000000000000000000000 ;
+0-
+b1 Z
+b10001 1
+b10001 7
+14
+#40000
+04
+#50000
+0"
+0'
+b1 a
+b10 Z
+1#
+1,
+b10001 %
+b10001 ^
+b10001 *
+b10001 \
+b10001 $
+b10001 ]
+b10001 +
+b10001 [
+14
+#60000
+04
+#70000
+1"
+1'
+b10 a
+14
+#80000
+04
+#90000
+b1 B
+b1 @
+b1101 5
+13
+b100000010000100000000000000000 2
+b100000010000100000000000000000 ;
+0-
+b1 Z
+0#
+0,
+14
+#100000
+04
+#110000
+0"
+0'
+b1 a
+b10 Z
+1#
+1,
+1&
+1)
+14
+#120000
+04
+#130000
+1"
+1'
+b10 a
+b10001 !
+b10001 <
+b10001 (
+b10001 b
+14
+#140000
+04
+#150000
+b10111 5
+1-
+b100 Z
+0#
+0,
+b10001 0
+b10001 8
+14
+#160000
+04
+#170000
+14
+#180000
+04
+#190000
+14
