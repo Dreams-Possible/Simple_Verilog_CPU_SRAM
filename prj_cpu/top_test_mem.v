@@ -35,7 +35,7 @@ module top_test_mem();
     initial
     begin
         //初始化
-        $display("end simulate");
+        $display("init simulate");
         $dumpfile("top_test_mem.vcd");
         $dumpvars(0,top_test_mem);
         $display("start simulate");
@@ -89,4 +89,5 @@ module top_test_mem();
     end
 
 endmodule
+
 
